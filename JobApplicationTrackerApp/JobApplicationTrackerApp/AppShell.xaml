@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:JobApplicationTrackerApp"
+       x:Class="JobApplicationTrackerApp.AppShell">
+
+    <!-- Flyout items appear in the hamburger menu -->
+    <FlyoutItem Title="Applications" Icon="list.png">
+        <Tab>
+            <ShellContent Route="MainPage" ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Add Application" Icon="add.png">
+        <Tab>
+            <ShellContent Route="AddApplication" ContentTemplate="{DataTemplate local:AddApplication}"/>
+        </Tab>
+    </FlyoutItem>
+</Shell>
